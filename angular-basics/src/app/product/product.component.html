@@ -1,0 +1,5 @@
+@if(card){
+<app-card (click)="onClick(name)">{{name}}: {{price}}</app-card>
+}@else {
+<p class="product" (click)="onClick(name)">{{name}}: {{price}}</p>
+}
