@@ -1,1 +1,15 @@
-<p>template-syntax works!</p>
+<h3>Template variable reference</h3>
+<input #phone placeholder="phone number" />
+<!-- lots of other elements -->
+<!-- phone refers to the input element; pass its `value` to an event handler -->
+<button type="button" (click)="callPhone(phone.value)">Call</button>
+<p>Phone Numbe: {{phoneNumber}}</p>
+
+<h3>Two-way Binding</h3>
+<app-sizer [(size)]="fontSizePx"></app-sizer>
+<div [style.font-size.px]="fontSizePx">Resizable Text</div>
+
+<h3>Template input variables</h3>
+<ul>
+    <li *ngFor="let hero of heros">{{hero.name}}</li>
+</ul>

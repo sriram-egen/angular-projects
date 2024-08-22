@@ -1,5 +1,5 @@
 <div class="products">
-    @for (product of products; track product){
+    @for (product of products; track product; let idx = $index){
     <app-product [name]="product.name" [price]="product.price" [card]="card"
         (productClicked)="onProductClicked($event)"></app-product>
     }
