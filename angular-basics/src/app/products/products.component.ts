@@ -10,6 +10,8 @@ import { ProductComponent } from '../product/product.component';
 })
 export class ProductsComponent {
   @Input() card: boolean = false
+
+  
   products = [
     {
       name: "phone",
