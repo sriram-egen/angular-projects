@@ -1,0 +1,7 @@
+<nav>
+    <ul class="flex gap-2">
+        @for(item of items; track item.label;){
+        <app-navitem [item]="item" />
+        }
+    </ul>
+</nav>
